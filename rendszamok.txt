@@ -1,0 +1,18 @@
+CEG306
+CEG304
+CEG302
+CEG308
+CEG307
+CEG309
+CEG303
+CEG301
+CEG305
+CEG300
+10 darab autó volt
+
+A hét
+Kedd 	1. F5 PP 10C	<->	F6 MR 11D
+		4. F2 MSE 10C	<->	F4
+		5. F3 MR 11D	<->	F5
+		5. F2 PP 10C	<->	F3
+		6. F2 PP 12B	<->	F5
