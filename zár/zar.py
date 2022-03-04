@@ -61,9 +61,42 @@ while len(ujkod)<len(be):
 
 print("5. feladat")
 print("Egy " + str(len(ujkod)) + " hosszú kódszám: "+ujkod)
+"""
+Függvény nyit(jo, proba:karaktersorozat): logikai érték
+egyezik:=(hossz(jo)=hossz(proba))
+Ha egyezik akkor
+elteres=ascii(jo[1])-ascii(proba[1])
+Ciklus i:=2-től hossz(jo)
+Ha ( elteres - (ascii(jo[i])-ascii(proba[i])) ) mod 10 <> 0
+akkor egyezik:=hamis
+Ciklus vége
+Elágazás vége
+nyit:=egyezik
+"""
+#print("6. feladat")
+def nyit(jo,proba):
+    egyezik=len(jo)==len(proba)
+    if egyezik:
+        elteres=ord(jo[0])-ord(proba[0])
+        for i in range(1,len(jo)):
+            if (elteres - (ord(jo[i]) - ord(proba[i]))) % 10 != 0:
+                egyezik=False
+    return egyezik
 
 
+#7. feladat
+siker = []
+for elem in kodok:
+    if len(elem) != len(be):
+        siker.append([elem, 'hibás hossz'])
+    elif nyit(be, elem) == False:
+        siker.append([elem, 'hibás kódszám'])
+    elif nyit(be, elem) == True:
+        siker.append([elem, 'sikeres'])
 
-
+kimenet = open('siker.txt', 'w')
+for elem in siker:
+    print(' '.join(elem), file=kimenet)
+kimenet.close()
 
     
