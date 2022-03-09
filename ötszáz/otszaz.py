@@ -63,6 +63,9 @@ print(str(szam)+" vásárlás során vettek belőle.")
 print("6. feladat")
 print(str(vasarlasDb)+ " darab vételekor fizetendő: "+ str(ertek(vasarlasDb)))
 
+
+
+print("7. feladat")
 darabF=0
 elozoIndex=0
 keresettIndex=0
@@ -77,10 +80,21 @@ for i in range(0,len(kosar)):
     if darabF==sorszam:
         break
 
-print(kosar[elozoIndex:keresettIndex])
+print(kosar[elozoIndex+1:keresettIndex])
 
+if sorszam>1:
+    darabKosar=kosar[elozoIndex+1:keresettIndex]
+else:
+    darabKosar=kosar[elozoIndex:keresettIndex]
 
+stat={}
+for e in darabKosar:
+    if e in stat.keys():
+        stat[e]+=1
+    else:
+        stat[e]=1
 
+print(stat)
 
 
 
