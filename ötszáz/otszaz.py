@@ -99,5 +99,25 @@ for e in stat:
     print(str(stat[e]) + " "+ e)
 
 
+#8. feladat
+stat={}
+ossz=[]
+for e in kosar:
+    if e=="F":
+        osszeg=0
+        for i in stat.values():
+            osszeg+=ertek(i)
+        ossz.append(osszeg)
+        stat={}
+        
+    else:
+        if e in stat.keys():
+            stat[e]+=1
+        else:
+            stat[e]=1
+    
+
+
+
 
 
