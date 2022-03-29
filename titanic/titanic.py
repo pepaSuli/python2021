@@ -67,5 +67,28 @@ for e in adatok2:
 for e in arany:
     print("\t"+e)
 
+print("6. feladat")
+print("\r\n".join(["\t"+e[0] for e in adatok2 if e[2] / (sum(e[1:])) > 0.6]))
+
+
+#print("7. feladat")
+maximum=-1
+maxkat=""
+for e in adatok2:
+    if e[1]>maximum:
+        maximum=e[1]
+        maxkat=e[0]
+
+print("7. feladat: "+maxkat)
+
+print(max([e[1] for e in adatok2]))
+
+print([k for k in adatok2)
+print([k[0] for k in adatok2 if k[1] == 192)
+print([k[0] for k in adatok2 if k[1] == max([e[1] for e in adatok2])])
+print([k[0] for k in adatok2 if k[1] == max([e[1] for e in adatok2])][0])
+      
+print("7. feladat: " + [k[0] for k in adatok2 if k[1] == max([e[1] for e in adatok2])][0])
+
 
 
