@@ -1,4 +1,5 @@
 #második verzió
+#első verzió
 f=open("naplo.txt")
 adatok=f.read().split("\n")
 f.close()
