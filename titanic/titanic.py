@@ -83,8 +83,8 @@ print("7. feladat: "+maxkat)
 
 print(max([e[1] for e in adatok2]))
 
-print([k for k in adatok2)
-print([k[0] for k in adatok2 if k[1] == 192)
+print([k for k in adatok2])
+print([k[0] for k in adatok2 if k[1] == 192])
 print([k[0] for k in adatok2 if k[1] == max([e[1] for e in adatok2])])
 print([k[0] for k in adatok2 if k[1] == max([e[1] for e in adatok2])][0])
       
