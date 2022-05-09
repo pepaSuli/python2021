@@ -1,0 +1,15 @@
+Autópark menetleveleinek nyilvántartása
+Menüvezérelt program
+Adatok:
+	- rendszám
+	- sofőr
+	- induló km
+	- vég km
+	- dátum (idő?)
+	- mennyit tankolt (0, ha nem)
+
+Adatok file-ban tárolása
+Adatfelvitel, módosítás, törlés(?)
+Statisztikák, érdekes lekérdezések
+Tesztfile készítés
+Tesztelés

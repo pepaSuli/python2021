@@ -3,7 +3,7 @@ class Kutya:
         self.nev=nev
 
     def ugat(self):
-        print("VAU-VAU ("+self.name+")")
+        print("VAU-VAU ("+self.nev+")")
 
 egyKutya=Kutya("Armageddon")
 print(egyKutya.nev)
