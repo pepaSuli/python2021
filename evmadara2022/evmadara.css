@@ -7,6 +7,7 @@ body {
 
 header {        
     overflow: hidden; 
+	max-height: 400px;
 }
 
 header img {
@@ -26,6 +27,7 @@ nav {
 
 a {
     color: rgb(32, 30, 49);
+	font-weight: bold;
 }
 
 h1, h2, h3 {
@@ -49,6 +51,8 @@ p {
 
 .dijazott {    
     letter-spacing: 1px;
+	font-style: italic;
+
 }
 
 .drop-shadow {
@@ -110,4 +114,9 @@ input[type="range"] {
     color: rgb(32, 30, 49);
     font-weight: bold;
     cursor: pointer;
+}
+
+.lista
+{
+	line-height: 200%;
 }
