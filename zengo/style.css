@@ -1,12 +1,42 @@
 #content{
+	width: 888px;
 	
 }
 #imageright{
-	
+	margin-left: 20px;
+	float:right;
+	border:1px solid forestgreen;
+	border-radius: 10px	;
+	background-color: lightgrey;
 }
 #imageleft{
-	
+	margin-right: 40px;
+	margin-bottom: 80px;
+	float:left;
+	border:1px solid forestgreen;
+	border-radius: 10px	;
+	background-color: lightgrey;
 }
+
+#imageleft img,#imageright img{
+	width: 200px;
+}
+
 .kepszoveg{
-	
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+h1,h2{
+	text-transform: uppercase;
+	color:forestgreen;
+}
+p,li{
+	text-align: justify;
+}
+a{
+	color:blue;
+}
+a:hover{
+	color:red;
 }
